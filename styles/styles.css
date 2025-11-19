@@ -1,0 +1,111 @@
+/* Header */
+header{
+    justify-content: space-between;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 5vw;
+    
+}
+
+header ul li a{
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .3s ease;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+header ul li a:hover{
+    color: #ff4c4c;
+    transition: .3s ease;
+}
+
+/* Contenedor formulario */
+.container{
+    width: 50vw;
+    height: 50vh;
+    top: calc(50% - 20vh);
+    left: 5vw;
+}
+
+.container h2{
+    color: #fefefe;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.container label, .container input{
+    color: #fefefe;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.container input{
+    padding: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff30;
+    transition: .3s ease;
+}
+
+.container button{
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ffffff30;
+    color: #fefefe;
+    transition: .3s ease;
+}
+
+.container button:hover, .container input:hover{
+    background-color: #ff4c4c;
+    cursor: pointer;
+    transition: .3s ease;
+    border: none;
+}
+
+
+.generador-2, .generador-3{
+    display: none;
+}
+
+
+.lista-gatos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    position: absolute;
+    width: 35vw;
+    height: 50vh;
+    top: calc(50vh - 20vh);
+    left: calc(100vw - 40vw);
+    z-index: 1;
+    background-color: #13131360;
+    overflow: scroll;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    transition: .3s ease;
+    backdrop-filter: blur(10px);
+}
+
+
+.lista-gatos li{
+    color: #fefefe;
+    margin: 10px 0;
+    list-style: none;
+
+}
+
+.lista-gatos:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}

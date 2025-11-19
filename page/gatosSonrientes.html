@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../js/ejercicio-1.js"></script>
+    <title>Leandro Pelozo - Mascotas</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">HOME</a></h1>
+        <ul>
+            <li><a href="#">Gatos sonrientes</a></li>
+            <li><a href="gatosYPasos.html">Gatos y pasos</a></li>
+            <li><a href="#">Gatos intercalados</a></li>
+        </ul>
+    </header>
+    <main>
+        <video id="bg-video" src="../media/2.mp4" autoplay loop muted></video>
+
+        <div class="container">
+            <div class="generador-1">
+                <h2>Generador de gatos sonrientes</h2>
+
+                <form id="form-gatos" action="../js/ejercicio-1.js">
+                    <label for="cantidad">Indique la cantidad de gatos que quiere mostrar: </label> <br>
+                    <input type="number" id="cantidad-gatos-1" min="1" placeholder="Ej: 10" required >
+                    <button type="submit">Generar</button>
+                </form>
+            </div>
+            </div>
+            <div class="generador-2">
+                <h2>Generador de gatos y pasos</h2>
+                <form action="js/ejercicio-2.js">
+                    <label for="cantidad">Indique la cantidad de gatos que quiere mostrar: </label> <br>
+                    <input type="number" id="cantidad-gatos-2" min="1" placeholder="Ej: 10" required > <br>
+                    <label for="cantidad">Indique la cantidad de PASOS que quiere mostrar: </label> <br>
+                    <input type="number" id="cantidad-pasos-2" min="1" placeholder="Ej: 5" required >
+                    <button type="submit">Generar</button>
+                </form>
+            </div>
+            <div class="generador-3">
+                <h2>Generador de gatos y pasos intercalados</h2>
+                <form action="js/ejercicio-3.js">
+                    <label for="cantidad">Indique la cantidad de gatos que quiere mostrar: </label> <br>
+                    <input type="number" id="cantidad-gatos-3" min="1" placeholder="Ej: 10" required > <br>
+                    <label for="cantidad">Indique la cantidad de PASOS que quiere mostrar: </label> <br>
+                    <input type="number" id="cantidad-pasos-3" min="1" placeholder="Ej: 5" required >
+                    <button type="submit">Generar</button>
+                </form>
+            </div>
+            
+        </div>
+        <div id="lista-gatos-1" class="lista-gatos"></div>
+    </main>
+</body>
+</html>
