@@ -10,7 +10,7 @@ for (var i=1; i<=cantidadDeGatos; i++) {
 
 var emojis = ['😺', '😸', '😹']
 
-document.getElementById("form-gatos").addEventListener("submit", function(e) {
+document.getElementById("form-gatos-1").addEventListener("submit", function(e) {
     e.preventDefault(); // Evita que la página se recargue
     
     var cantidad = parseInt(document.getElementById("cantidad-gatos-1").value);
@@ -21,7 +21,7 @@ document.getElementById("form-gatos").addEventListener("submit", function(e) {
         return;
     }
 
-    var contenedor = document.getElementById("lista-gatos");
+    var contenedor = document.getElementById("lista-gatos-1");
     var html = "";
 
      for (var i = 1; i <= cantidad; i++) {
