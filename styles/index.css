@@ -15,8 +15,14 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #13131360;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    transition: .3s ease;
+}
+
+header:hover{
+    backdrop-filter: blur(10px);
+    transition: .3s ease;
 }
 
 header h1 a{
@@ -62,7 +68,7 @@ video{
     padding: 30px;
     border-radius: 10px;
     transition: .3s ease;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -72,7 +78,7 @@ video{
     transition: .3s ease;
 }
 
-.container h1, .nav-container li, .nav-container p{
+.container h1, .container p{
     transition: .3s ease;
     color: #fefefe;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
@@ -86,32 +92,48 @@ video{
     font-size: 4em;
 }
 
-.nav-container li{
-    list-style: none;
-    font-size: 1.3em;
-    cursor: pointer;
-}
-
-.nav-container ul li a{
-    color: #ff4c4c;
-    text-decoration: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: .3s ease;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.nav-container ul li a:hover{
+.container p{
     font-size: 1.4em;
-    color: #dd1d1d;
 }
 
-
-.nav-container p{
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.cards{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
 }
 
-.container:hover p{
-    font-size: 1.3em;
+.card{
+    width: 20vw;
+    height: 10vh;
+    padding: 10px;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .8em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    text-align: center;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.card1{
+    background-image: url('../media/card-1.png');
+}
+.card2{
+    background-image: url('../media/card-2.png');
+}
+.card3{
+    background-image: url('../media/card-3.png');
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
 }
