@@ -137,3 +137,62 @@ video{
     transform: scale(1.1);
     transition: .3s ease;
 }
+
+@media (max-width: 800px) {
+    header{
+        height: 12vh;
+        padding: 0 1rem;
+    }
+
+    header h1 a{
+        margin-left: 3vw;
+        font-size: 1.1em;
+    }
+
+    video{
+        object-position: center top;
+    }
+
+    .container{
+        position: absolute;
+        width: 90vw;
+        height: auto;
+        top: 45vh;
+        left: 5vw;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 8px;
+        transform: none;
+    }
+
+    .container:hover{
+        transform: none;
+        backdrop-filter: blur(6px);
+    }
+
+    .container h1{
+        font-size: 2em;
+    }
+
+    .container p{
+        font-size: 1em;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+        height: 12vh;
+        font-size: 0.95em;
+        padding: 12px;
+    }
+
+    .card:hover{
+        transform: none;
+    }
+}
+    

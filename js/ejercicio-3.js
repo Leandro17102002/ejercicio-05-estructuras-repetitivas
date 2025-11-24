@@ -29,10 +29,11 @@ document.getElementById("form-gatos-3").addEventListener("submit", function(e){
     var contenedor=document.getElementById("lista-gatos-3");
     var html="";
 
+    // Ejercicio
     for ( var i=1 ; i <= cantidadGatos ; i++){
         var pasos = '🐾'.repeat(cantidadPasos);
         var gato = (i % 2 == 0) ? '🐅' : '🐈';
-        html += `<li>Gato #${i} ${gato} ${pasos}</li>`;
+        html += `<li>Gato #${i} ${gato} ${pasos}</li>`; //reemplaza al console.log
     }
 
     html+= "</ul>";

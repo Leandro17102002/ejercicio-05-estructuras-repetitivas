@@ -22,9 +22,10 @@ document.getElementById("form-gatos-2").addEventListener("submit", function(e){
     var contenedor=document.getElementById("lista-gatos-2");
     var html="";
 
+    // Ejercicio
     for ( var i=1 ; i <= cantidadGatos ; i++){
         var pasos = '🐾'.repeat(cantidadPasos);
-        html += `<li>Gato #${i} 🐈 ${pasos}</li>`;
+        html += `<li>Gato #${i} 🐈 ${pasos}</li>`; // remplaza al console.log
     }
 
     html+= "</ul>";
